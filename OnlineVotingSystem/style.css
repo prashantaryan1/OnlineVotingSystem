@@ -1,0 +1,181 @@
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body setup */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Orbitron', sans-serif;
+    color: #222;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer styling */
+footer {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+/* Optional: Add subtle glowing gradient line on top */
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+/* Add footer links if needed */
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff5722;
+    text-decoration: underline;
+}
+
+/* Central container for content */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0.1, 0, 0, 0.2);
+}
+
+/* Form label and input styles */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1em;
+    color: #222;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 22px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #fcfcfc;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+/* Default button style */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.03);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings and paragraphs */
+h2, p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Registration text */
+.reg {
+    text-align: center;
+    margin-left: 40px;
+}
+
+/* Cool heading style */
+.cool-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #1a237e;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    transition: all 0.4s ease;
+}
+
+.cool-heading:hover {
+    color: #3949ab;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylish gradient button */
+.stylish-button {
+    background: linear-gradient(135deg, #f12711, #f5af19);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 8px 20px rgba(241, 39, 17, 0.4);
+}
+
+.stylish-button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #f5af19, #f12711);
+    box-shadow: 0 10px 25px rgba(241, 39, 17, 0.6);
+}
+.links{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 20px;
+}

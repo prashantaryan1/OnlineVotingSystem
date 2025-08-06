@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voter Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #register{
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Voter Login</h2>
+    <form action="php/login.php" method="post">
+      <input type="email" name="email" placeholder="Enter Email" required>
+      <input type="password" name="password" placeholder="Enter Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="register">Don't have an account? <a href="register.html">Register here</a></p>
+    <a href="php/logout.php" class="logout-button">Logout</a>
+  </div>
+  <footer>Developed By Prashant | RN College | Guided By R Ranjan Sir </footer>
+  <footer>
+    &copy; 2025 OnlineVotingSystem. All rights reserved. 
+    <br>
+</footer>
+</body>
+</html>

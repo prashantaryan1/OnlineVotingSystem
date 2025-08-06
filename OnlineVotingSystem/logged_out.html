@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logged Out</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .message {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 60px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .message h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .message p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .back-button {
+      background-color: #fff;
+      color: #764ba2;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #e0e0e0;
+      color: #5e2a95;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="message">
+    <h1>✅ You have been logged out!</h1>
+    <p>Thank you for using the Online Voting System.</p>
+    <a href="admin/admin_login.html" class="back-button">← Return to Admin Login</a>
+    <a href="index.html" class="back-button">← Return to Voter Login</a>
+
+  </div>
+
+</body>
+</html>

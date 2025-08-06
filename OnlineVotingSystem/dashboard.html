@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cast Your Vote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Cast Your Vote</h2>
+    <form action="php/vote.php" method="post">
+      <select name="candidate_id" id="candidateDropdown" required>
+        <option value="" disabled selected>-- Choose Any Candidate --</option>
+        <option value="1">1)Tejaswi Yadav (RJD)</option>
+        <option value="2">2)Nitish Kumar (JDU)</option>
+        <option value="3">3)Prashant Kishor (JSP)</option>
+        <option value="4">4)Chirag Paswan (LJP)</option>
+        <option value="5">5)Narendra Modi (BJP)</option>
+      </select>
+      <button type="submit">Vote</button>
+    </form>
+    <a href="php/logout.php" class="logout-button">Logout</a>
+  </div>
+  
+    
+  <script>
+    fetch("php/get_candidates.php")
+      .then(res => res.json())
+      .then(data => {
+        let dropdown = document.getElementById("candidateDropdown");
+        dropdown.innerHTML = '<option value="" disabled selected>-- Select Candidate --</option>';
+        data.forEach(c => {
+          let option = document.createElement("option");
+          option.value = c.candidate_id;
+          option.textContent = `${c.name} (${c.party})`;
+          dropdown.appendChild(option);
+        });
+      });
+  </script>
+  <footer>Developed By Prashant| RN College|Guided By R Ranjan Sir </footer>
+</body>
+</html>
